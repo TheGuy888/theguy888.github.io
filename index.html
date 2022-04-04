@@ -6,18 +6,6 @@
 <link href="favicon-16x16.png" type="image/png" sizes="16x16" rel="icon">
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   </head>
-  <script>
- const popupDelay = randomNumber(1000,4000);
- const alerts = ["hello, visitor.                                                                        - Par","is this website just a geeky mental break for me, without any true benefit for society?  Yes.                                                                                                      - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though.                                                     - Par"];
- window.setTimeout(popup,popupDelay);
-function popup(){
-var randMessage = randomNumber(1,alerts.length);
-window.alert(alerts[+randMessage-1]);};
-
-
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}</script>
 <style>
 :root{--green: #00ac00;--orange: #e69138;--gray:#e9edfd;--grey:#FFFFFF;--curve:10px;--lightpink:#ffebeb;--darkpink:#ffd4d4;}
 sup {color:var(--green);font-size:11px;}
@@ -219,6 +207,7 @@ function myTimer() {
    <td colspan="4"style="background:var(--gray)">Example game description</td>
    </tr>
 </table>
+ <p id="susText"></p>
 </body>
   <!--EXAMPLE UNDER HERE
    
@@ -233,4 +222,27 @@ function myTimer() {
    
    
   EXAMPLE ABOVE HERE-->
+ 
+  <script>
+   window.setTimeout(popup,1000);
+    window.setTimeout(setMsg,1000);
+function popup(){
+window.alert("hello, visitor!                                                                           - Par");
+ let userName = prompt("What is your name?","Anon");
+switch (userName){
+case "Par":
+window.alert('I doubt that, but "ok"...   ಠ_ಠ');
+default:
+window.alert("Hello, "+ userName +"!");
+}};
+   const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  Yes.                                                                                                      - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though.                                                     - Par","I am you. -"];
+   
+  function setMsg(){
+  document.getElementById("susText").InnerHTML = msgs[1];};
+  
+  function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+  </script>
 </html>
+
