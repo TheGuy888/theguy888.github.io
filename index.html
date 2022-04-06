@@ -13,6 +13,7 @@ table {border-radius: var(--curve) var(--curve) 0px 0px;}
 table {background: black;}
 td {background: white;}
 p {color: gray;}
+button{background-color:gray;border-radius:10px;width:80px;}
 h2 {color:lightgray;}
 th {background: lightgray;border: 0px solid black;}
 td, th, h2, p {font-family:"Arvo";}
@@ -206,6 +207,7 @@ function myTimer() {
    </tr>
 </table>
  <p id="susText"></p>
+ <button onclick="changeName()">Change username</button>
 </body>
   <!--EXAMPLE UNDER HERE
    
@@ -229,16 +231,8 @@ function myTimer() {
  
 function popup(){
 window.alert("hello, visitor!                                                                           - Par");
- let userName = prompt("What is your name?","Anon");
-switch (userName){
-case "Par":
-window.alert('I doubt that, but "ok"...   ಠ_ಠ');
-document.cookie = "username="+ userName +""   
-   break;
-default:
-window.alert("Hello, "+ userName +"!");
-document.cookie = "username"+"="+ userName +";"
-}};
+changeName()
+};
    const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  Yes.                                                                                                      - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though.                                                     - Par","I am you. -"];
    
   function setMsg(){
@@ -263,5 +257,16 @@ function getCookie(cname) {
   }
   return "";
 }
+function changeName(){
+ let userName = prompt("What is your name?","Anon");
+switch (userName){
+case "Par":
+window.alert('I doubt that, but "ok"...   ಠ_ಠ');
+document.cookie = "username="+ userName +""   
+   break;
+default:
+window.alert("Hello, "+ userName +"!");
+document.cookie = "username"+"="+ userName +";"
+}};
   </script>
 </html>
