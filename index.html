@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
 <title>[ Total Seriousness. ]</title>
@@ -209,6 +210,7 @@ function myTimer() {
 </table>
  <p id="susText"></p>
  <button onclick="changeName()">Change username</button>
+ <button id= "btn" onclick="popupsOff()">Turn popups off</button>
 </body>
   <!--EXAMPLE UNDER HERE
    
@@ -226,18 +228,24 @@ function myTimer() {
  
   <script>
   if (getCookie("username") == ""){
-   window.setTimeout(popup,1000);
-   } else {window.alert("Welcome back, "+ getCookie("username") +"!")};
+   window.setTimeout(popupIntro,1000);
+   let offoron = "off"
+   if (getCookie("popupson") == ""){document.cookie = "popupson=true";}
+   } else if (getCookie("popupson") != "false"){window.alert("Welcome back, "+ getCookie("username") +"!"); document.getElementById("btn").InnerHTML = "off";};
    window.setTimeout(setMsg,1000);
  
-function popup(){
+function popupIntro(){
 window.alert("hello, visitor!                                                                           - Par");
 changeName()
 };
    const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  Yes. - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though. - Par","I am you. -"];
    
   function setMsg(){
-  document.getElementById("susText").InnerHTML = msgs[1];};
+  document.getElementById("susText").InnerHTML = msgs[1];}
+  
+  function popupsOff(){
+  document.cookie = "popupson=false";
+  }
   
   function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
