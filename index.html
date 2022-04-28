@@ -14,7 +14,7 @@ table {border-radius: var(--curve) var(--curve) 0px 0px;}
 table {background: black;}
 td {background: white;}
 p {color: gray;}
-button{background-color:gray;border-radius:10px;width:80px;}
+button{background-color:gray;border-radius:10px;width:120px;}
 h2 {color:lightgray;}
 th {background: lightgray;border: 0px solid black;}
 td, th, h2, p {font-family:"Arvo";}
@@ -40,10 +40,10 @@ function myTimer() {
    <u style="float: right;"class="time" id="insertTime"></u>
 <table style="width:100%">
  <th style="border-radius: var(--curve) 0px 0px 0px"><a href="https://mp3download.center/home" style="color:var(--green)" target=_blank>Green link</a>= Multiplayer (letter in corner stands for 'L'ocal or 'O'nline multiplayer.)</th>
- <th><a href="https://academylearning.me/" style="color:orange" target=_blank>Orange link</a>= Game is on scratch, and exists simply to spite <a href="https://github.com/alphaleggo" target=_blank style="color:#212121">Alphaleggo</a>.</th>
+ <th><a href="https://open.spotify.com/playlist/2fWWqFrnlj3hQeFcZ1BmZN" style="color:orange" target=_blank>Orange link</a>= Game is on scratch, and exists simply to spite <a href="https://github.com/alphaleggo" target=_blank style="color:#212121">Alphaleggo</a>.</th>
  <th><a href="https://docs.google.com/document/d/1zQiW5kI-ajCAW-DOSAtQwMf6RqDOmY6IFhWutFINnxA/edit?usp=sharing" style="color:magenta" target=_blank>Pink link</a>=Is a simulation and/or not a game</th>
  <th><a href="https://idle-js-games.github.io/idle-js-games-list/" style="color:red" target=_blank>Red link</a>= Clicker/Idle/Incremental game.</th>
- <th onclick="alert('Oops! Got the urls mixed up again!\nSorry about that!')" style="border-radius: 0px var(--curve) 0px 0px"><a href="https://bit.ly/34kXgZe" style= "color:blue" target=_blank>Blue link</a>= Normal link because i want the full collection of colored hyperlinks</th>
+ <th style="border-radius: 0px var(--curve) 0px 0px"><a href="https://bit.ly/34kXgZe" style= "color:blue" target=_blank>Blue link</a>= Normal link because i want the full collection of colored hyperlinks</th>
   
  <tr style="color:white"> 
   <td style="background-color:gray" colspan= "1"> <b>Game</b></td>
@@ -208,9 +208,12 @@ function myTimer() {
    <td colspan="4"style="background:var(--gray)">Example game description</td>
    </tr>
 </table>
- <p id="susText"></p>
- <button onclick="changeName()">Change username</button>
- <button style="float:right; width:120px" id= "btn" onclick="popupsOff()">Turn automatic popups off</button></body>
+<table style="width:100%; border-radius: 0px 0px var(--curve) var(--curve)"><tr>
+<th style="width:10%; border-radius: 0px 0px 0px var(--curve);"><button style="float:left" onclick="changeName()">Change username</button></th>
+<th style="width:80%; background-color:gray"><p id="sustext" style = "color:white">example text</p></th>
+<th style="width:10%; border-radius: 0px 0px var(--curve) 0px;"><button style="float:right; width:120px" id= "btn" onclick="popupsOff()">Turn automatic popups off</button></th></tr>
+ </table>
+ </body>
   <!--EXAMPLE UNDER HERE
    
    <tr>
