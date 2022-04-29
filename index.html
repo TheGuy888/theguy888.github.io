@@ -266,8 +266,8 @@ changeName()
    "You have dysentery",
    "KFC Stands for Kentucky Fried Computer - Alphaleggo",
    "Koss is a Wisconsin based company explaining the cheesephones - Alphaleggo",
-   "The spice must flow. - Alphaleggo"
-   "Oh it's you - Glados",
+   "The spice must flow. - Alphaleggo",
+   "Oh, it's you - Glados",
    "I am not Alphaleggo - Betaleggo",
    "The Abscence of light is darkness - Alphaleggo",
    "A banana is every color except yellow - Alphaleggo",
@@ -279,10 +279,10 @@ changeName()
    "Huh - Alphaleggo",
    "The USPS's Mail trucks are called Gruman LLV - Alphaleggo",
    "Is my username cringe? Yes. Am I changing it? No. - Alphaleggo",
-   "Redacted - Alphaleggo",
+   "[Redacted] - Alphaleggo",
    "Why am I writing so many splashes?!?! - Alphaleggo",
    "Death to Chromebook!!! - Alphaleggo (Written On A Chromebook)",
-   "Hello " + getCookie("username")" - Alphaleggo",
+   "Hello " + getCookie("username") + " - Alphaleggo",
    "https://tinyurl.com/Fr33R0bux4U Click for free Robux!!! - Alphaleggo",
 ];
    
@@ -315,6 +315,7 @@ function getCookie(cname) {
 function changeName(){
  let userName = prompt("What is your name?","Anon");
  msgs[10] = "I am you. - " + userName + ""
+ msgs[32] = "Hello " + userName + " - Alphaleggo"
 switch (userName){
 case "Par":
 window.alert('I doubt that, but "ok"...   ಠ_ಠ');
