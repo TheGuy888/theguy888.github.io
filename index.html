@@ -210,7 +210,7 @@ function myTimer() {
 </table>
 <table style="width:100%; border-radius: 0px 0px var(--curve) var(--curve)"><tr>
 <th style="width:10%; border-radius: 0px 0px 0px var(--curve);"><button style="float:left" onclick="changeName()">Change username</button></th>
-<th style="width:80%; background-color:gray"><p id="sustext" style = "color:white">example text</p></th>
+<th style="width:80%; background-color:gray"><p onclick="setMsg()" id="susText" style = "color:white"></p></th>
 <th style="width:10%; border-radius: 0px 0px var(--curve) 0px;"><button style="float:right; width:120px" id= "btn" onclick="popupsOff()">Turn automatic popups off</button></th></tr>
  </table>
  </body>
@@ -240,10 +240,10 @@ function popupIntro(){
 window.alert("hello, visitor!                                                                           - Par");
 changeName()
 };
-   const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  Yes. - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though. - Par","I am you. -"];
+   const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  ..Yes. - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though. - Par","I am you."];
    
   function setMsg(){
-  document.getElementById("susText").InnerHTML = msgs[1];}
+  document.getElementById("susText").innerHTML = '"' + msgs[randomNumber(0,msgs.length - 1)] + '"';}
   
   function popupsOff(){
   document.cookie = "popupson=false";
