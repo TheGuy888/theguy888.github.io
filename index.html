@@ -287,7 +287,8 @@ changeName()
 ];
    
   function setMsg(){
-  document.getElementById("susText").innerHTML =  msgs[randomNumber(0,msgs.length - 1)];}
+  let messageNumber = randomNumber(0,msgs.length - 1);
+  document.getElementById("susText").innerHTML =  msgs[messageNumber];}
   
   function popupsOff(){
   document.cookie = "popupson=false";
@@ -314,8 +315,9 @@ function getCookie(cname) {
 }
 function changeName(){
  let userName = prompt("What is your name?","Anon");
- msgs[10] = "I am you. - " + userName + ""
- msgs[32] = "Hello " + userName + " - Alphaleggo"
+ msgs[10] = "I am you. - " + userName + "";
+ msgs[32] = "Hello " + userName + " - Alphaleggo";
+ document.getElementById("susText").innerHTML =  msgs[messageNumber];
 switch (userName){
 case "Par":
 window.alert('I doubt that, but "ok"...   ಠ_ಠ');
