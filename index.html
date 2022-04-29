@@ -208,6 +208,9 @@ function myTimer() {
    <td colspan="1"style="background:var(--gray)"><a href= "https://theguy888.github.io/example.html" style="color:insertcolor" target=_blank>Example Game Title</a></td>
    <td colspan="4"style="background:var(--gray)">Example game description</td>
    </tr>
+
+
+   
 </table>
 <table style="width:100%; border-radius: 0px 0px var(--curve) var(--curve)"><tr>
 <th style="width:10%; border-radius: 0px 0px 0px var(--curve);"><button style="float:left;cursor: grabbing;" onclick="changeName()">Change username</button></th>
@@ -244,7 +247,11 @@ function popupIntro(){
 window.alert("hello, visitor!                                                                           - Par");
 changeName()
 };
-   const msgs = ["is this website just a geeky mental break for me, without any true benefit for society?  . . Yes. - Par", "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though. - Par","I am you."];
+   const msgs = [
+   "is this website just a geeky mental break for me, without any true benefit for society?  . . Yes. - Par", 
+   "you might want to check out this website called 'github.com', if you want to do coding someday. Terrible name though. - Par",
+   "I am you."
+];
    
   function setMsg(){
   document.getElementById("susText").innerHTML = '"' + msgs[randomNumber(0,msgs.length - 1)] + '"';}
