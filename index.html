@@ -243,7 +243,7 @@ function myTimer() {
    let offoron = "off"
    if (getCookie("popupson") == ""){document.cookie = "popupson=true";}
    } else if (getCookie("popupson") != "false"){window.alert("Welcome back, "+ getCookie("username") +"!"); document.getElementById("btn").InnerHTML = "off";};
-   window.setTimeout(setMsg,1000);
+   window.setTimeout(setMsg,100);
  
 function popupIntro(){
 window.alert("hello, visitor!                                                                           - Par");
