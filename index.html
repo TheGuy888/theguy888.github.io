@@ -297,7 +297,9 @@ changeName()
 ];
    
   function setMsg(){
-  msgs [43] = "You rolled a die. It landed on " + randomNumber(1,6) + ". - Par";
+  msgs[43] = "You rolled a die. It landed on " + randomNumber(1,6) + ". - Par";
+  msgs[10] = "I am you. - " + userName + "";
+  msgs[32] = "Hello \"" + userName + "\" - Alphaleggo";
   let messageNumber = randomNumber(0,msgs.length - 1);
   document.getElementById("susText").innerHTML =  msgs[messageNumber];}
   
@@ -326,8 +328,6 @@ function getCookie(cname) {
 }
 function changeName(){
  let userName = prompt("What is your name?","Anon");
- msgs[10] = "I am you. - " + userName + "";
- msgs[32] = "Hello \"" + userName + "\" - Alphaleggo";
  setMsg();
 switch (userName){
 case "Par":
