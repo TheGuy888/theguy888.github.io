@@ -3,9 +3,7 @@
       --gray:#e9edfd;;
       --curve:10px;
       --lightpink:#ffebeb;
-      --darkpink:#ffd4d4;
-      --padding: 200px;
-      --width:800px;}
+      --darkpink:#ffd4d4;}
 
 sup {color:var(--green);font-size:11px;}
 u.time {font-size:17px; color:gray; padding-bottom: 5px;}
@@ -19,4 +17,5 @@ th {background: lightgray;border: 0px solid black;}
 body {background-color:#2b2b2b;font-family:"Arvo";}
 .gray{background:var(--gray)}
 .grey{background:white}
-.AIp {padding:0px var(--padding);font-size:30px; color:lightgray}
+.DP{background:var(--darkpink)}
+.LP{background:var(--lightpink)}
