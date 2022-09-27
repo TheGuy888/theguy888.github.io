@@ -3,5 +3,4 @@ body {background-color:#2b2b2b ;font-family:Arvo}
 td, th {border: 3px ridge white; color:white}
 p {padding:0px var(--padding);font-size:30px; color:lightgray}
 a {color: magenta;}
-.AIp {padding:0px var(--padding);font-size:30px; color:lightgray}
 .NB {border:none}
