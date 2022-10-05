@@ -483,6 +483,7 @@ function MineJS() {
 			textures: [ "oakPlanks", "bookshelf" ]
 		},
 		{ name: "netherrack" },
+		{ name: "netherWartBlock",},
 		{ name: "soulSand" },
 		{ name: "glowstone" },
 		{ name: "netherBricks" },
@@ -512,7 +513,6 @@ function MineJS() {
 			 name: "tnt",
 		 textures: ["tntBottom", "tntTop", "tntSides"]
 		},
-		{ name: "netherWartBlock", id: 152,},
 	]
 	const BLOCK_COUNT = blockData.length;
 
@@ -1003,7 +1003,7 @@ function MineJS() {
 	let version = "Alpha 0.7.0"
 	let reach = 19 // Max distance player can place or break blocks
 	let sky = [0.33, 0.54, 0.72] // 0 to 1 RGB color scale
-	let superflat = false
+	let superflat = true
 	let trees = true
 	let caves = true
 
